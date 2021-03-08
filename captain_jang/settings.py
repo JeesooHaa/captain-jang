@@ -34,7 +34,7 @@ def get_secret(key, secrets=secrets):
         error_message = f'Set the {key} environment variable'
         raise ImproperlyConfigured(error_message)
 
-SECRET_KEY = get_secret("SECRET_KEY")
+SECRET_KEY = get_secret('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
