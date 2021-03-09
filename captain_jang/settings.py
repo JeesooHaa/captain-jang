@@ -69,7 +69,7 @@ ROOT_URLCONF = 'captain_jang.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'captain_jang', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
